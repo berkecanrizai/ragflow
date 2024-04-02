@@ -15,8 +15,8 @@ def singleton(cls, *args, **kw):
     return _singleton
 
 
-from .minio_conn import MINIO
-from .es_conn import ELASTICSEARCH
+# from .minio_conn import MINIO
+# from .es_conn import ELASTICSEARCH
 
 def rmSpace(txt):
     txt = re.sub(r"([^a-z0-9.,]) +([^ ])", r"\1\2", txt, flags=re.IGNORECASE)
